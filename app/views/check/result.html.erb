@@ -1,0 +1,21 @@
+<div class="container-fluid result-container">
+    <div class='result text-center <%= @bg_color%>'>
+        <p><b><%= @result_message %></b></p>
+        Hamming distance : <span><%= @hamming_distance %></span> by <b><%= @type %></b>
+    </div>
+    <div class="row">
+        <% @image_h.each_value { |image| %>
+        <div class="col-md-6">
+            <div class='text-center'>
+                <%= image_tag(image['image'].file.url(:thumb), class: 'preview') if image['image'].file.url.present? %>
+            </div>
+            <div class="text-center file-name">
+                <span><%= image['file_name'] %></span>
+            </div>
+        </div>
+        <% } %>
+    </div>
+    <div class="back_btn">
+        <%= link_to 'back', check_index_path, class: 'btn btn-lg btn-block btn-primary', data: {"turbolinks" => false} %>
+    </div>
+</div>

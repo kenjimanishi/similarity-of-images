@@ -1,0 +1,65 @@
+@import "bootstrap"; 
+
+body {
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, div.result {
+    margin: 1.8em 0;
+}
+
+.index-container {
+    max-width: 420px;
+    form.form-image .row {
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .dropzone {
+        height: 216px;
+        max-width: 350px;
+        border: 2px groove rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background: #e6e6e6;
+        .dz-preview.dz-image-preview {
+            background: none;
+        }
+        .dz-message {
+            margin: 3em 0;
+        }
+    }
+}
+
+.result-container {
+    max-width: 600px;
+    div.result {
+        padding: 15px 0px 20px;
+        p {
+            font-size: 24px;
+        }
+        span {
+            font-size: 20px;
+        }
+    }        
+    img.preview {
+        max-height: 200px;
+        max-width: 200px;
+    }    
+    .file-name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    div.back_btn {
+        margin-top: 25px;
+    }
+}
+
+.swal-modal {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+}
