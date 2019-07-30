@@ -44,7 +44,7 @@ gem 'bootstrap-sass', '~> 3.3'
 gem 'jquery-rails', '~> 4.3'
 # CarrierWaveを利用する
 gem 'carrierwave', '~> 1.3'
-gem 'mini_magick', '~> 4.9'
+gem 'mini_magick', '~> 4.9.4'
 # dropzonejs-railsを利用する
 gem 'dropzonejs-rails', '~> 0.8'
 
